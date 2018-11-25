@@ -11,7 +11,7 @@ class MainDashboard extends Component{
   render(){
     return(
       <div>
-        <h1>Main Page</h1>
+        <h1>Welcom To Main Page</h1>
       </div>
     )
   }

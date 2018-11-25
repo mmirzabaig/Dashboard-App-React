@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Weather from '../Weather';
+import Weather from '../WeatherComponent';
 
 class MainDashboard extends Component{
   constructor(){
@@ -13,6 +13,7 @@ class MainDashboard extends Component{
     return(
       <div>
         <h1>Main Page</h1>
+        <p>----------------------------------------------------</p>
         <Weather />
       </div>
     )

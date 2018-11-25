@@ -13,6 +13,7 @@ class WeatherComp extends Component {
     humidity: null,
     description: null,
     error: null,
+    id: null
   }
 
   getWeather = async (e) =>{
@@ -33,7 +34,8 @@ class WeatherComp extends Component {
       country: response.sys.country,
       humidity: response.main.humidity,
       description: response.weather[0].description,
-      error: ""
+      error: "",
+      id: response.weather[0].id
     })
   }
   render(){
@@ -48,6 +50,7 @@ class WeatherComp extends Component {
           humidity={this.state.humidity}
           description={this.state.description}
           error={this.state.error}
+          id={this.state.id}
         />
 
       </div>

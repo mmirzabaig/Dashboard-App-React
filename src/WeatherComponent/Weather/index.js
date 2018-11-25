@@ -6,12 +6,24 @@ console.log(props, 'second')
   const WeatherCondition = () =>{
     console.log(document.body.style, 'LOL');
     const weatherDescription = {
-      'clear sky': 'https://sg.fiverrcdn.com/photos/116492928/original/50c60cafd1d4cc926c01e50636da8ed13c190bdd.jpg?1535742086',
-      'haze': 'https://d33jqrhnfd45wd.cloudfront.net/affa2709-2bf9-4229-a41a-3a50a7f8a5b3'
+      'clear sky': {
+        'url': 'https://sg.fiverrcdn.com/photos/116492928/original/50c60cafd1d4cc926c01e50636da8ed13c190bdd.jpg?1535742086',
+        'id': [800, 801, 802, 803, 804]
+      },
+      'haze': {
+        'url': 'https://d33jqrhnfd45wd.cloudfront.net/affa2709-2bf9-4229-a41a-3a50a7f8a5b3',
+        'id': [701, 711, 721, 741, 731, 310]
+      },
     }
     for ( let key in weatherDescription ) {
-      if ( key === props.description ) {
-        document.body.style.backgroundImage = 'url('+ weatherDescription[key] +')'
+      if(Array.isArray(weatherDescription[key].id)) {
+        console.log(weatherDescription[key].id, 'KEEEYYYS')
+        for ( let i = 0; i < weatherDescription[key].id.length; i++ ) {
+
+          if ( weatherDescription[key].id[i] === props.id ) {
+            document.body.style.backgroundImage = 'url('+ weatherDescription[key].url +')'
+          }
+        }
       }
     }
   }

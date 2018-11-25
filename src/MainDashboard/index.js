@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Weather from '../WeatherComponent';
 
 class MainDashboard extends Component{
   constructor(){
@@ -11,7 +12,9 @@ class MainDashboard extends Component{
   render(){
     return(
       <div>
-        <h1>Welcom To Main Page</h1>
+        <h1>Main Page</h1>
+        <p>----------------------------------------------------</p>
+        <Weather />
       </div>
     )
   }

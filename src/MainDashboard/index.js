@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import ClockComponent from '../Clock';
 import Giphy from '../Giphy';
 import Weather from '../WeatherComponent';
+import './style.css';
+import Navigation from '../Navigation';
 
 
 class MainDashboard extends Component{
@@ -15,13 +17,13 @@ class MainDashboard extends Component{
   render(){
     return(
       <div>
-        <h1>Main Page</h1>
+          <h1>Main Page</h1>
 
-        <ClockComponent />
-        <Giphy />
+          <ClockComponent />
+          <Giphy />
 
-        <p>----------------------------------------------------</p>
-        <Weather />
+          <p>----------------------------------------------------</p>
+          <Weather />
 
       </div>
     )

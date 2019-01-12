@@ -1,0 +1,27 @@
+.navigation {
+  position: absolute;
+  height: 840px;
+  width: 80px;
+  margin: 0px;
+  border: 1px solid black;
+}
+
+.option {
+  height: 5%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.optTitle {
+  margin-top: 15%;
+  color: black;
+}
+
+.optTitleBlock {
+  position: absolute;
+  left: 25%;
+  margin-top: -5%;
+  width: 50%;
+  height: 3%;
+  border: 1px solid black;
+}

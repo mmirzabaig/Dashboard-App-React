@@ -1,0 +1,60 @@
+.loginForm {
+  padding: 80px;
+  margin: 10%;
+  background-color: lightblue;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.signInText {
+  text-align: center;
+  color: white;
+}
+
+.registerText {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.registerText:hover {
+  cursor: pointer;
+  color: lightblue;
+}
+
+input {
+  margin: 5px;
+  width: 95%;
+}
+
+.background {
+  background-color: rgba(243, 249, 251, .5);
+}
+
+.loginButton {
+  width: 95%;
+  background-color: lightblue;
+  color: white;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #db5555;
+}
+
+.groceryLogo {
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}

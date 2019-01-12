@@ -1,14 +1,15 @@
 import React from 'react';
+import {Form, Input, Button} from 'reactstrap';
 
-const Form = (props) =>{
+const Forms = (props) =>{
   console.log(props, 'this is props')
   return(
-    <form onSubmit={props.loadWeather}>
-      <input type="text" name='city' placeholder="City..."/>
-      <input type="text" name='country' placeholder="Country..."/>
-      <button>Get Weather</button>
-    </form>
+    <Form onSubmit={props.loadWeather}>
+      <Input type="text" style={{width: '30%', left: '35%', position: 'relative'}} name='city' placeholder="City..."/>
+      <Input type="text" style={{width: '30%', left: '35%', position: 'relative'}} name='country' placeholder="Country..."/>
+      <Button>Get Weather</Button>
+    </Form>
   )
 }
 
-export default Form;
+export default Forms;

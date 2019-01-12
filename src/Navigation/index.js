@@ -19,6 +19,15 @@ const Navigation = () => {
           </div>
       </div>
     </Link>
+    <Link to='/logout'>
+      <div className='option'>
+          <div className='optTitle'>
+            <div className='optTitleBlock'>
+              <p className='optTitleBloack'>L</p>
+            </div>
+          </div>
+      </div>
+    </Link>
 
     </div>
   )

@@ -15,6 +15,7 @@ class Register extends Component {
 
   handleSubmit = async (e) => {
   e.preventDefault();
+  console.log(this.state, 'MIRZA')
   const registerResponse = await fetch('http://localhost:9000/auth/register', {
     method: 'POST',
     credentials: 'include',

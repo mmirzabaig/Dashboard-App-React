@@ -6,6 +6,8 @@ class Register extends Component {
   constructor() {
     super();
     this.state = {
+      name: '',
+      email: '',
       username:'',
       password:''
 }
@@ -36,12 +38,13 @@ handleChange = (e) => {
 
   render() {
     return(
-      <div> 
+      <div>
         <div className='wrapper'>
           <div className='loginForm'>
             <h1 className='register'> Register </h1>
               <Form onSubmit={this.handleSubmit}>
-                <input type='text' name='fullName' placeholder='full name' onChange={this.handleChange}/> <br/>
+                <input type='text' name='name' placeholder='name' onChange={this.handleChange}/> <br/>
+                <input type='text' name='email' placeholder='email' onChange={this.handleChange}/> <br/>
                 <input type='text' name='username' placeholder='username' onChange={this.handleChange}/><br/>
                 <input type='password' name='password' placeholder='password' onChange={this.handleChange}/>
                 <input className="registerButton" type='Submit' value='register'/>
